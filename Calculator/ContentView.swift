@@ -31,7 +31,7 @@ enum CalcButton: String{
     var buttonColor: Color{
         switch self{
         case .add, .subtract, .multiply, .divide, .equal:
-            return .blue
+            return .orange
         case .clear, .negative, .percent:
             return Color(.lightGray)
         default:
@@ -64,7 +64,7 @@ struct ContentView: View {
     var body: some View {
         
         ZStack{
-            Color.gray.edgesIgnoringSafeArea(.all)
+            Color.black.edgesIgnoringSafeArea(.all)
             
             VStack{
                 Spacer()
